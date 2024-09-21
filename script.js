@@ -1,9 +1,12 @@
 //complete this code
 class Animal {
+	
 	constructor(species){
+		this.species = species;
 	}
+	
 	makeSound(){
-		console.log()
+		console.log(`The ${this.species} makes a sound`)
 	}
 }
 	
@@ -21,6 +24,11 @@ class Cat extends Animal {
 		console.log("purr");
 	}
 }
+
+const mydog= new Dog ("jimmy");
+mydog.makeSound();
+mydog.bark();
+
 
 
 // Do not change the code below this line
